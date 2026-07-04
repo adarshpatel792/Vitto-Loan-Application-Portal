@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:5000/api
+
+GET {{baseUrl}}/health
+
+###
+
+POST {{baseUrl}}/applications
+Content-Type: application/json
+
+{
+  "applicantName": "Aarav Sharma",
+  "mobileNumber": "9876543210",
+  "loanAmount": 250000,
+  "loanPurpose": "Inventory purchase for retail shop",
+  "preferredLanguage": "Hindi"
+}
+
+###
+
+GET {{baseUrl}}/applications?status=pending&page=1&limit=10
+
+###
+
+GET {{baseUrl}}/summary
+
+###
+
+PATCH {{baseUrl}}/applications/00000000-0000-0000-0000-000000000000/status
+Content-Type: application/json
+
+{
+  "status": "approved"
+}
