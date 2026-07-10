@@ -1,4 +1,4 @@
-# Vitto Loan Application Portal
+# Loan Application Portal
 
 A production-quality full-stack loan application portal for Vitto, built with React, Vite, TailwindCSS, Node.js, Express, and PostgreSQL. The app supports borrower intake, operations dashboarding, application review, analytics, CSV export, dark mode, and an auditable pending-to-decision status workflow.
 
